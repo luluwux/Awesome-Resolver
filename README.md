@@ -1,3 +1,14 @@
+`2025-11-07 21:01:41 UTC`
+| Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| Quad9 (Zararlı Yazılım Engelleme) | `filtering` | `9.9.9.9` | ✅ Up | 1 | ➖ No | ➖ No |
+| Google (Varsayılan) | `standard` | `8.8.8.8` | ✅ Up | 13 | ➖ No | ➖ No |
+| Cloudflare (Zararlı Yazılım Engelleme) | `filtering` | `1.1.1.2` | ✅ Up | 29 | ➖ No | ☣️ Yes |
+| Cloudflare (Varsayılan) | `standard` | `1.1.1.1` | ✅ Up | 51 | ➖ No | ➖ No |
+| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ Up | 191 | ➖ No | ➖ No |
+| AdGuard DNS (Reklam Engelleme) | `filtering` | `94.140.14.14` | ✅ Up | 206 | 🛡️ Yes | ➖ No |
+| AdGuard DNS (DoH) | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ Down | - | ➖ No | ➖ No |
+
 `2025-11-07 20:53:00 UTC`
 | Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
