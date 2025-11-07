@@ -9,17 +9,6 @@
 | AdGuard DNS (Reklam Engelleme) | `filtering` | `94.140.14.14` | ✅ Up | 206 | 🛡️ Yes | ➖ No |
 | AdGuard DNS (DoH) | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ Down | - | ➖ No | ➖ No |
 
-`2025-11-07 20:53:00 UTC`
-| Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| Quad9 (Zararlı Yazılım Engelleme) | `filtering` | `9.9.9.9` | ✅ Up | 2 | ➖ No | ➖ No |
-| Cloudflare (Varsayılan) | `standard` | `1.1.1.1` | ✅ Up | 4 | ➖ No | ➖ No |
-| Cloudflare (Zararlı Yazılım Engelleme) | `filtering` | `1.1.1.2` | ✅ Up | 4 | ➖ No | ☣️ Yes |
-| Google (Varsayılan) | `standard` | `8.8.8.8` | ✅ Up | 13 | ➖ No | ➖ No |
-| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ Up | 189 | ➖ No | ➖ No |
-| AdGuard DNS (Reklam Engelleme) | `filtering` | `94.140.14.14` | ✅ Up | 212 | 🛡️ Yes | ➖ No |
-| AdGuard DNS (DoH) | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ Down | - | ➖ No | ➖ No |
-
 # DNS-List 
 
 A live, automatically tested, and updated list of public DNS servers.
