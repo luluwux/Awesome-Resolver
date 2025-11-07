@@ -19,14 +19,12 @@ def test_standard_dns(resolver_ip, domain):
         start_time = time.monotonic()
         answer = resolver.resolve(domain, 'A')
         end_time = time.monotonic()
-        
         response_ms = int((end_time - start_time) * 1000)
         
         if answer:
             return "up", response_ms, list(str(a) for a in answer)
         else:
             return "down", 0, []
-            
     except (dns.resolver.Timeout, dns.resolver.NoNameservers, dns.exception.DNSException):
         return "down", 0, []
 
@@ -38,16 +36,13 @@ def test_doh(url, domain):
         start_time = time.monotonic()
         response = requests.get(url, params=params, headers=headers, timeout=2)
         end_time = time.monotonic()
-        
         response_ms = int((end_time - start_time) * 1000)
         
         if response.status_code == 200:
             data = response.json()
             if data.get('Status') == 0 and 'Answer' in data:
                 return "up", response_ms, [a['data'] for a in data['Answer'] if a['type'] == 1]
-        
         return "down", 0, []
-        
     except requests.exceptions.RequestException:
         return "down", 0, []
 
@@ -69,7 +64,8 @@ def check_doh_blocking(url, domain):
     except Exception:
         return False
 
-def update_readme_table(readme_path, results):
+def generate_new_readme(results):
+    now_utc = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z')
     
     table_header = "| Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |\n"
     table_header += "| :--- | :--- | :--- | :---: | :---: | :---: | :---: |\n"
@@ -79,52 +75,38 @@ def update_readme_table(readme_path, results):
         status_icon = "✅ Up" if res['status'] == 'up' else "❌ Down"
         ad_block_icon = "🛡️ Yes" if res.get('blocks_ads') else "➖ No"
         malware_block_icon = "☣️ Yes" if res.get('blocks_malware') else "➖ No"
-        
         address = f"`{res['ip']}`" if res['type'] == 'standard' or res['type'] == 'filtering' else f"`{res['url']}`"
         
         table_body += f"| {res['name']} | `{res['type']}` | {address} | {status_icon} | {res['response_ms'] if res['status'] == 'up' else '-'} | {ad_block_icon} | {malware_block_icon} |\n"
-        
+
+    readme_template = f"""# Awesome-Resolver 🛡️
+
+A live, automatically tested, and updated list of public DNS servers.
+
+This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 12 hours and publishes the results.
+
+Last Updated: `{now_utc}`
+
+## 📊 Live DNS Status Table
+
+{table_header}
+{table_body}
+## 📁 Filtered Lists
+
+Raw lists of servers that are currently up and have passed the tests. These are ideal for use in Pi-hole, AdGuard Home, or other router/client configurations.
+
+* **All "Up" Servers (JSON):** [`dns-all-up.json`](dns-all-up.json)
+* **Ad-Blocking Servers (TXT):** [`dns-adblock.txt`](dns-adblock.txt)
+* **Malware-Blocking Servers (TXT):** [`dns-malware-block.txt`](dns-malware-block.txt)
+* **"Up" DoH Endpoints (JSON):** [`dns-doh-up.json`](dns-doh-up.json)
+"""
+    
     try:
-        with open(readme_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        table_start_tag = ""
-        table_end_tag = ""
-        
-        start_index = content.find(table_start_tag)
-        end_index = content.find(table_end_tag)
-        
-        if start_index != -1 and end_index != -1:
-            new_content = (
-                content[:start_index + len(table_start_tag)] +
-                "\n" + table_header + table_body + "\n" +
-                content[end_index:]
-            )
-        else:
-            print("Error: Could not find 'DNS_TABLE_START' or 'DNS_TABLE_END' tags in README.md.")
-            new_content = content
-
-        time_start_tag = ""
-        time_end_tag = ""
-        
-        time_start_index = new_content.find(time_start_tag)
-        time_end_index = new_content.find(time_end_tag)
-        
-        if time_start_index != -1 and time_end_index != -1:
-            now_utc = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z')
-            new_content = (
-                new_content[:time_start_index + len(time_start_tag)] +
-                f"`{now_utc}`" +
-                new_content[time_end_index:]
-            )
-        else:
-            print("Error: Could not find 'LAST_UPDATED_START' or 'LAST_UPDATED_END' tags in README.md.")
-
-        with open(readme_path, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-            
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(readme_template)
+        print("Successfully generated new README.md")
     except IOError as e:
-        print(f"Error reading or writing to README.md: {e}")
+        print(f"Error writing new README.md: {e}")
 
 def main():
     try:
@@ -138,7 +120,6 @@ def main():
         return
 
     results = []
-    
     up_adblock = []
     up_malware_block = []
     up_doh = []
@@ -161,10 +142,8 @@ def main():
             if status == 'up':
                 blocks_ads = "ad-block" in features and check_blocking(ip, TEST_DOMAIN_AD)
                 blocks_malware = "malware-block" in features and check_blocking(ip, TEST_DOMAIN_MALWARE)
-                
                 result_data['blocks_ads'] = blocks_ads
                 result_data['blocks_malware'] = blocks_malware
-                
                 all_up_data.append(result_data)
                 if blocks_ads:
                     up_adblock.append(ip)
@@ -179,10 +158,8 @@ def main():
             if status == 'up':
                 blocks_ads = "ad-block" in features and check_doh_blocking(url, TEST_DOMAIN_AD)
                 blocks_malware = "malware-block" in features and check_doh_blocking(url, TEST_DOMAIN_MALWARE)
-                
                 result_data['blocks_ads'] = blocks_ads
                 result_data['blocks_malware'] = blocks_malware
-                
                 all_up_data.append(result_data)
                 up_doh.append({"name": name, "url": url})
                 if blocks_ads:
@@ -192,7 +169,9 @@ def main():
         
         results.append(result_data)
 
-    update_readme_table('README.md', results)
+
+    generate_new_readme(results)
+
 
     with open('dns-all-up.json', 'w', encoding='utf-8') as f:
         json.dump(all_up_data, f, indent=2, ensure_ascii=False)
