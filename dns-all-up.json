@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Cloudflare (Varsayılan)",
+    "ip": "1.1.1.1",
+    "type": "standard",
+    "features": [
+      "privacy",
+      "fast"
+    ],
+    "status": "up",
+    "response_ms": 8,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "Google (Varsayılan)",
+    "ip": "8.8.8.8",
+    "type": "standard",
+    "features": [
+      "stable"
+    ],
+    "status": "up",
+    "response_ms": 7,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "Quad9 (Zararlı Yazılım Engelleme)",
+    "ip": "9.9.9.9",
+    "type": "filtering",
+    "features": [
+      "privacy",
+      "malware-block"
+    ],
+    "status": "up",
+    "response_ms": 6,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "AdGuard DNS (Reklam Engelleme)",
+    "ip": "94.140.14.14",
+    "type": "filtering",
+    "features": [
+      "privacy",
+      "ad-block"
+    ],
+    "status": "up",
+    "response_ms": 216,
+    "blocks_ads": true,
+    "blocks_malware": false
+  },
+  {
+    "name": "Cloudflare (Zararlı Yazılım Engelleme)",
+    "ip": "1.1.1.2",
+    "type": "filtering",
+    "features": [
+      "privacy",
+      "malware-block"
+    ],
+    "status": "up",
+    "response_ms": 8,
+    "blocks_ads": false,
+    "blocks_malware": true
+  },
+  {
+    "name": "Cloudflare (DoH)",
+    "ip": null,
+    "type": "doh",
+    "url": "https://cloudflare-dns.com/dns-query",
+    "features": [
+      "privacy",
+      "doh"
+    ],
+    "status": "up",
+    "response_ms": 70,
+    "blocks_ads": false,
+    "blocks_malware": false
+  }
+]

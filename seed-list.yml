@@ -1,0 +1,37 @@
+servers:
+  - name: "Cloudflare (Varsayılan)"
+    ip: "1.1.1.1"
+    type: "standard"
+    features: ["privacy", "fast"]
+
+  - name: "Google (Varsayılan)"
+    ip: "8.8.8.8"
+    type: "standard"
+    features: ["stable"]
+
+  - name: "Quad9 (Zararlı Yazılım Engelleme)"
+    ip: "9.9.9.9"
+    type: "filtering"
+    features: ["privacy", "malware-block"]
+
+  - name: "AdGuard DNS (Reklam Engelleme)"
+    ip: "94.140.14.14"
+    type: "filtering"
+    features: ["privacy", "ad-block"]
+
+  - name: "Cloudflare (Zararlı Yazılım Engelleme)"
+    ip: "1.1.1.2"
+    type: "filtering"
+    features: ["privacy", "malware-block"]
+  
+  - name: "Cloudflare (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://cloudflare-dns.com/dns-query"
+    features: ["privacy", "doh"]
+
+  - name: "AdGuard DNS (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://dns.adguard-dns.com/dns-query"
+    features: ["privacy", "ad-block", "doh"]
