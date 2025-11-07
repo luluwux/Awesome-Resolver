@@ -79,6 +79,9 @@ def generate_new_readme(results):
         
         table_body += f"| {res['name']} | `{res['type']}` | {address} | {status_icon} | {res['response_ms'] if res['status'] == 'up' else '-'} | {ad_block_icon} | {malware_block_icon} |\n"
 
+
+    full_table = table_header + table_body
+
     readme_template = f"""# Awesome-Resolver 🛡️
 
 A live, automatically tested, and updated list of public DNS servers.
@@ -89,8 +92,8 @@ Last Updated: `{now_utc}`
 
 ## 📊 Live DNS Status Table
 
-{table_header}
-{table_body}
+{full_table}
+
 ## 📁 Filtered Lists
 
 Raw lists of servers that are currently up and have passed the tests. These are ideal for use in Pi-hole, AdGuard Home, or other router/client configurations.
