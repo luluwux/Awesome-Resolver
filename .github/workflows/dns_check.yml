@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Setup Python 3.10
         uses: actions/setup-python@v4
@@ -33,7 +35,7 @@ jobs:
       - name: Force Push Changes
         run: |
           if ! git diff --quiet; then
-            # Değişiklik burada: Bot kullanıcısı yerine GitHub hesabınızı kullanın
+            # Commit'in size atfedilmesi için kullanıcıyı ayarla
             git config --local user.name "${{ github.actor }}"
             git config --local user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
             
