@@ -86,7 +86,7 @@ def generate_new_readme(results):
 
 A live, automatically tested, and updated list of public DNS servers.
 
-This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 12 hours and publishes the results.
+This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 4 hours and publishes the results.
 
 Last Updated: `{now_utc}`
 
