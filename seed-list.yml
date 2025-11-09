@@ -107,8 +107,6 @@ servers:
     url: "https://doh.cleanbrowsing.org/doh/adblock-filter/"
     features: ["privacy", "ad-block", "doh"]
 
-  # --- YENİ EKLENEN VEYA KORUNAN GÜVENİLİR SUNUCULAR ---
-
   # Neustar (UltraDNS)
   - name: "Neustar"
     ip: "156.154.70.1"
