@@ -4,38 +4,38 @@ A live, automatically tested, and updated list of public DNS servers.
 
 This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 4 hours and publishes the results.
 
-Last Updated: `2025-12-04 08:35:03 UTC`
+Last Updated: `2025-12-04 12:53:52 UTC`
 
 ## 📊 Live DNS Status Table
 
 | Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| OpenDNS (FamilyShield) | `filtering` | `208.67.222.123` | ✅ | 5 | ❌ | ❌ |
-| Cloudflare (Secondary) | `standard` | `1.0.0.1` | ✅ | 6 | ❌ | ❌ |
-| Quad9 | `filtering` | `9.9.9.9` | ✅ | 6 | ❌ | ❌ |
-| Verisign (Secondary) | `standard` | `64.6.65.6` | ✅ | 6 | ❌ | ❌ |
-| Cloudflare | `standard` | `1.1.1.1` | ✅ | 7 | ❌ | ❌ |
-| Cloudflare (Malware Block) | `filtering` | `1.1.1.2` | ✅ | 7 | ❌ | ✅ |
-| Cloudflare (Family) | `filtering` | `1.1.1.3` | ✅ | 8 | ❌ | ✅ |
-| OpenDNS (Secondary) | `standard` | `208.67.220.220` | ✅ | 8 | ❌ | ❌ |
-| Control D (Unfiltered) | `standard` | `76.76.2.0` | ✅ | 8 | ❌ | ❌ |
-| Google (Secondary) | `standard` | `8.8.4.4` | ✅ | 9 | ❌ | ❌ |
-| Control D (Unfiltered Sec) | `standard` | `76.76.10.0` | ✅ | 9 | ❌ | ❌ |
-| Comodo Secure DNS | `filtering` | `8.26.56.26` | ✅ | 11 | ❌ | ❌ |
-| Neustar | `standard` | `156.154.70.1` | ✅ | 12 | ❌ | ❌ |
-| Verisign | `standard` | `64.6.64.6` | ✅ | 12 | ❌ | ❌ |
-| CleanBrowsing (Family) | `filtering` | `185.228.168.168` | ✅ | 13 | ❌ | ❌ |
-| Google | `standard` | `8.8.8.8` | ✅ | 15 | ❌ | ❌ |
-| CleanBrowsing (Security) | `filtering` | `185.228.168.9` | ✅ | 15 | ❌ | ❌ |
-| OpenDNS | `standard` | `208.67.222.222` | ✅ | 24 | ❌ | ❌ |
-| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 54 | ❌ | ❌ |
-| DNS0.eu | `filtering` | `193.110.81.0` | ✅ | 83 | ❌ | ❌ |
-| DNS.WATCH | `standard` | `84.200.69.80` | ✅ | 93 | ❌ | ❌ |
-| Yandex.DNS (Safe) | `filtering` | `77.88.8.7` | ✅ | 157 | ❌ | ❌ |
-| Yandex.DNS | `standard` | `77.88.8.8` | ✅ | 161 | ❌ | ❌ |
-| NextDNS (DoH) | `doh` | `https://dns.nextdns.io/dns-query` | ✅ | 179 | ❌ | ❌ |
-| AdGuard DNS (Family) | `filtering` | `94.140.14.15` | ✅ | 215 | ✅ | ❌ |
-| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 216 | ✅ | ❌ |
+| Quad9 | `filtering` | `9.9.9.9` | ✅ | 4 | ❌ | ❌ |
+| Control D (Unfiltered Sec) | `standard` | `76.76.10.0` | ✅ | 5 | ❌ | ❌ |
+| OpenDNS (FamilyShield) | `filtering` | `208.67.222.123` | ✅ | 15 | ❌ | ❌ |
+| Control D (Unfiltered) | `standard` | `76.76.2.0` | ✅ | 16 | ❌ | ❌ |
+| OpenDNS | `standard` | `208.67.222.222` | ✅ | 18 | ❌ | ❌ |
+| Verisign (Secondary) | `standard` | `64.6.65.6` | ✅ | 18 | ❌ | ❌ |
+| Cloudflare | `standard` | `1.1.1.1` | ✅ | 19 | ❌ | ❌ |
+| Cloudflare (Secondary) | `standard` | `1.0.0.1` | ✅ | 19 | ❌ | ❌ |
+| Cloudflare (Family) | `filtering` | `1.1.1.3` | ✅ | 19 | ❌ | ✅ |
+| Comodo Secure DNS | `filtering` | `8.26.56.26` | ✅ | 19 | ❌ | ❌ |
+| CleanBrowsing (Security) | `filtering` | `185.228.168.9` | ✅ | 20 | ❌ | ❌ |
+| CleanBrowsing (Family) | `filtering` | `185.228.168.168` | ✅ | 24 | ❌ | ❌ |
+| Verisign | `standard` | `64.6.64.6` | ✅ | 26 | ❌ | ❌ |
+| Cloudflare (Malware Block) | `filtering` | `1.1.1.2` | ✅ | 27 | ❌ | ✅ |
+| Neustar | `standard` | `156.154.70.1` | ✅ | 27 | ❌ | ❌ |
+| OpenDNS (Secondary) | `standard` | `208.67.220.220` | ✅ | 70 | ❌ | ❌ |
+| Google | `standard` | `8.8.8.8` | ✅ | 79 | ❌ | ❌ |
+| Google (Secondary) | `standard` | `8.8.4.4` | ✅ | 92 | ❌ | ❌ |
+| DNS.WATCH | `standard` | `84.200.69.80` | ✅ | 137 | ❌ | ❌ |
+| DNS0.eu | `filtering` | `193.110.81.0` | ✅ | 148 | ❌ | ❌ |
+| Yandex.DNS | `standard` | `77.88.8.8` | ✅ | 183 | ❌ | ❌ |
+| Yandex.DNS (Safe) | `filtering` | `77.88.8.7` | ✅ | 183 | ❌ | ❌ |
+| AdGuard DNS (Family) | `filtering` | `94.140.14.15` | ✅ | 187 | ✅ | ❌ |
+| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 206 | ❌ | ❌ |
+| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 223 | ✅ | ❌ |
+| NextDNS (DoH) | `doh` | `https://dns.nextdns.io/dns-query` | ✅ | 526 | ❌ | ❌ |
 | Google (DoH) | `doh` | `https://dns.google/dns-query` | ❌ | - | ❌ | ❌ |
 | OpenDNS (DoH) | `doh` | `https://doh.opendns.com/dns-query` | ❌ | - | ❌ | ❌ |
 | Quad9 (DoH) | `doh` | `https://dns.quad9.net/dns-query` | ❌ | - | ❌ | ❌ |
