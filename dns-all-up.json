@@ -8,7 +8,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 4,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -34,7 +34,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -62,7 +62,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 45,
+    "response_ms": 41,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -74,7 +74,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 20,
+    "response_ms": 10,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -86,7 +86,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 10,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -99,7 +99,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 17,
+    "response_ms": 27,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -112,7 +112,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 25,
+    "response_ms": 18,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -125,7 +125,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 17,
+    "response_ms": 20,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -151,7 +151,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 169,
+    "response_ms": 682,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -166,7 +166,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 168,
+    "response_ms": 171,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -179,7 +179,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -193,7 +193,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -206,7 +206,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 1,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -219,7 +219,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 204,
+    "response_ms": 200,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -233,7 +233,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 192,
+    "response_ms": 205,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -246,7 +246,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 1,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -272,7 +272,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -299,7 +299,7 @@
       "eu"
     ],
     "status": "up",
-    "response_ms": 162,
+    "response_ms": 150,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -314,7 +314,7 @@
       "customizable"
     ],
     "status": "up",
-    "response_ms": 318,
+    "response_ms": 300,
     "blocks_ads": false,
     "blocks_malware": false
   }
