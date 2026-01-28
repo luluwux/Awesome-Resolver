@@ -8,7 +8,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -34,7 +34,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -48,7 +48,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 3,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -62,7 +62,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 141,
+    "response_ms": 82,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -74,7 +74,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 27,
+    "response_ms": 13,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -86,7 +86,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 12,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -99,7 +99,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 23,
+    "response_ms": 11,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -112,7 +112,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 17,
+    "response_ms": 11,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -125,7 +125,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 17,
+    "response_ms": 12,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -138,7 +138,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -151,7 +151,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 170,
+    "response_ms": 205,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -166,7 +166,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 209,
+    "response_ms": 203,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -179,7 +179,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 5,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -193,7 +193,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -206,7 +206,20 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 2,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "Comodo Secure DNS",
+    "ip": "8.26.56.26",
+    "type": "filtering",
+    "features": [
+      "security",
+      "malware-block"
+    ],
+    "status": "up",
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -219,7 +232,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 205,
+    "response_ms": 139,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -233,7 +246,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 194,
+    "response_ms": 145,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -246,7 +259,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 1,
+    "response_ms": 15,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -259,7 +272,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 13,
+    "response_ms": 15,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -272,7 +285,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 3,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -285,7 +298,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -300,7 +313,7 @@
       "customizable"
     ],
     "status": "up",
-    "response_ms": 109,
+    "response_ms": 134,
     "blocks_ads": false,
     "blocks_malware": false
   }
