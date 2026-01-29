@@ -8,7 +8,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -21,7 +21,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -34,7 +34,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 20,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -48,7 +48,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -62,7 +62,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 100,
+    "response_ms": 46,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -74,7 +74,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 33,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -86,7 +86,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 32,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -99,7 +99,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 15,
+    "response_ms": 18,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -112,7 +112,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 15,
+    "response_ms": 20,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -125,7 +125,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 16,
+    "response_ms": 17,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -138,7 +138,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 4,
+    "response_ms": 8,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -151,7 +151,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 184,
+    "response_ms": 168,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -166,7 +166,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 181,
+    "response_ms": 167,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -179,7 +179,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -193,7 +193,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 19,
+    "response_ms": 10,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -206,20 +206,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 4,
-    "blocks_ads": false,
-    "blocks_malware": false
-  },
-  {
-    "name": "Comodo Secure DNS",
-    "ip": "8.26.56.26",
-    "type": "filtering",
-    "features": [
-      "security",
-      "malware-block"
-    ],
-    "status": "up",
-    "response_ms": 18,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -232,7 +219,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 186,
+    "response_ms": 198,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -246,7 +233,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 192,
+    "response_ms": 206,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -259,7 +246,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 5,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -272,7 +259,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 18,
+    "response_ms": 10,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -285,7 +272,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 5,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -298,7 +285,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 5,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -313,7 +300,7 @@
       "customizable"
     ],
     "status": "up",
-    "response_ms": 303,
+    "response_ms": 211,
     "blocks_ads": false,
     "blocks_malware": false
   }
