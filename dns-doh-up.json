@@ -2,9 +2,5 @@
   {
     "name": "Cloudflare (DoH)",
     "url": "https://cloudflare-dns.com/dns-query"
-  },
-  {
-    "name": "NextDNS (DoH)",
-    "url": "https://dns.nextdns.io/dns-query"
   }
 ]
