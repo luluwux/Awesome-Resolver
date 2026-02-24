@@ -8,7 +8,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -21,7 +21,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 7,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -34,7 +34,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 11,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -62,7 +62,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 56,
+    "response_ms": 54,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -99,7 +99,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 11,
+    "response_ms": 16,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -112,7 +112,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 8,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -125,7 +125,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 24,
+    "response_ms": 7,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -151,7 +151,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 46,
+    "response_ms": 27,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -166,7 +166,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 49,
+    "response_ms": 22,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -211,6 +211,19 @@
     "blocks_malware": false
   },
   {
+    "name": "Comodo Secure DNS",
+    "ip": "8.26.56.26",
+    "type": "filtering",
+    "features": [
+      "security",
+      "malware-block"
+    ],
+    "status": "up",
+    "response_ms": 13,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
     "name": "Yandex.DNS",
     "ip": "77.88.8.8",
     "type": "standard",
@@ -219,7 +232,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 158,
+    "response_ms": 147,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -233,7 +246,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 150,
+    "response_ms": 131,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -246,7 +259,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 14,
+    "response_ms": 11,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -259,7 +272,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 7,
+    "response_ms": 23,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -300,7 +313,7 @@
       "customizable"
     ],
     "status": "up",
-    "response_ms": 63,
+    "response_ms": 49,
     "blocks_ads": false,
     "blocks_malware": false
   }
