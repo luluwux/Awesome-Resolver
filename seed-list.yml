@@ -165,6 +165,13 @@ servers:
     url: "https://dns.controld.com/dns-query"
     features: ["privacy", "doh"]
 
+  # ADnull
+  - name: "ADnull (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://dns.adnull.com/dns-query"
+    features: ["privacy", "ad-block", "malware-block", "doh"]
+
   # Mullvad
   - name: "Mullvad (Ad-block)"
     ip: "193.138.218.74"
