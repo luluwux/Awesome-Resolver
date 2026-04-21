@@ -1,4 +1,4 @@
 # Auto-updated list of ad-blocking DNS servers
-# Last Updated: 2026-04-21T06:04:54.345776+00:00
+# Last Updated: 2026-04-21T09:44:04.602845+00:00
 94.140.14.14
 94.140.14.15
