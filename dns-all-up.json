@@ -48,7 +48,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 3,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -62,7 +62,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 89,
+    "response_ms": 34,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -74,7 +74,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 10,
+    "response_ms": 19,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -86,7 +86,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 26,
+    "response_ms": 17,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -99,7 +99,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 18,
+    "response_ms": 17,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -112,7 +112,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 16,
+    "response_ms": 19,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -125,7 +125,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 20,
+    "response_ms": 16,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -138,7 +138,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 8,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -151,7 +151,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 77,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -166,35 +166,8 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 68,
     "blocks_ads": true,
-    "blocks_malware": false
-  },
-  {
-    "name": "CleanBrowsing (Security)",
-    "ip": "185.228.168.9",
-    "type": "filtering",
-    "features": [
-      "privacy",
-      "malware-block"
-    ],
-    "status": "up",
-    "response_ms": 9,
-    "blocks_ads": false,
-    "blocks_malware": false
-  },
-  {
-    "name": "CleanBrowsing (Family)",
-    "ip": "185.228.168.168",
-    "type": "filtering",
-    "features": [
-      "privacy",
-      "malware-block",
-      "family-block"
-    ],
-    "status": "up",
-    "response_ms": 9,
-    "blocks_ads": false,
     "blocks_malware": false
   },
   {
@@ -206,7 +179,20 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 4,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "DNS.WATCH",
+    "ip": "84.200.69.80",
+    "type": "standard",
+    "features": [
+      "privacy",
+      "no-logs"
+    ],
+    "status": "up",
+    "response_ms": 149,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -219,7 +205,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 196,
+    "response_ms": 210,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -233,7 +219,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 211,
+    "response_ms": 216,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -259,7 +245,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 8,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -285,7 +271,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 3,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -300,7 +286,7 @@
       "customizable"
     ],
     "status": "up",
-    "response_ms": 243,
+    "response_ms": 233,
     "blocks_ads": false,
     "blocks_malware": false
   }
